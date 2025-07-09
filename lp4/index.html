@@ -66,6 +66,10 @@
     .question.active {
       display: block;
     }
+    h2 {
+      margin: 15px 0;
+      font-size: 1.1rem;
+    }
     button {
       background: linear-gradient(to right, #4caf50, #81c784);
       color: white;
@@ -125,6 +129,21 @@
       color: #666;
       text-decoration: underline;
       margin: 0 5px;
+    }
+
+    /* Mobile specific tweaks */
+    @media (max-width: 600px) {
+      body {
+        background: #ffffff;
+      }
+      #survey-container {
+        margin: 20px auto;
+        padding: 20px 15px;
+      }
+      button {
+        min-width: 100%;
+        margin: 10px 0;
+      }
     }
   </style>
 </head>
