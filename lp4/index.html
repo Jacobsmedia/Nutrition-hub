@@ -1,251 +1,255 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Mitolyn</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <style>
-    body, h1, h2, p {
-      margin: 0;
-      padding: 0;
-      font-family: 'Arial', sans-serif;
-    }
-    body {
-      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    #survey-container {
-      background: rgba(255, 255, 255, 0.95);
-      padding: 30px 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      width: 90%;
-      max-width: 480px;
-      text-align: center;
-      margin: 40px auto 100px auto;
-      flex-shrink: 0;
-    }
-    #headline {
-      margin-bottom: 25px;
-    }
-    #headline h1 {
-      font-size: 1.4rem;
-      color: #6a1b9a;
-    }
-    #headline p {
-      font-size: 1rem;
-      color: #555;
-    }
-    #headline img {
-      width: 100%;
-      max-width: 250px;
-      margin-top: 15px;
-      border-radius: 10px;
-    }
-    #headline.hide-image img {
-      display: none;
-    }
-    #progress-bar {
-      height: 10px;
-      background: #e0e0e0;
-      border-radius: 5px;
-      margin-bottom: 20px;
-      overflow: hidden;
-    }
-    #progress {
-      height: 100%;
-      width: 0;
-      background: #4caf50;
-      transition: width 0.3s ease-in-out;
-    }
-    .question {
-      display: none;
-    }
-    .question.active {
-      display: block;
-    }
-    h2 {
-      margin: 15px 0;
-      font-size: 1.1rem;
-    }
-    button {
-      background: linear-gradient(to right, #4caf50, #81c784);
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      margin: 8px 5px;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-      font-size: 1rem;
-      min-width: 40%;
-    }
-    button:hover {
-      background: linear-gradient(to right, #388e3c, #66bb6a);
-    }
-    #cta.hidden {
-      display: none;
-    }
-    #cta {
-      margin-top: 30px;
-    }
-    #cta a img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-top: 15px;
-    }
-    #cta a.button-link {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: #0288d1;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 25px;
-      animation: pop 1.2s ease-in-out infinite;
-      transform-origin: center;
-    }
-    #cta p {
-      font-size: 0.75rem;
-      color: #666;
-      margin-top: 10px;
-    }
-    @keyframes pop {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.1); }
-    }
-    footer {
-      font-size: 0.65rem;
-      text-align: center;
-      color: #666;
-      padding: 30px 15px;
-      line-height: 1.4;
-      margin-top: auto;
-    }
-    footer a {
-      color: #666;
-      text-decoration: underline;
-      margin: 0 5px;
-    }
+  <title>Untitled</title>
+  
 
-    /* Mobile specific tweaks */
-    @media (max-width: 600px) {
-      body {
-        background: #ffffff;
-      }
-      #survey-container {
-        margin: 20px auto;
-        padding: 20px 15px;
-      }
-      button {
-        min-width: 100%;
-        margin: 10px 0;
-      }
-    }
-  </style>
 </head>
 <body>
-  <div id="survey-container">
-    <div id="headline">
-      <h1>Inside: The Little-Known “Purple Peel” Hack Melting Fat for Thousands.</h1>
-      <p>4 fast questions. 1 surprising result.</p>
-      <img src="purple_peel_fruit.jpg" alt="Purple Peel" />
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple Peel Hack - nutrition-hub.org</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and general styles */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f6fa;
+        }
+
+        /* Container */
+        #container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Main content */
+        .content-wrapper {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header styles */
+        h1 {
+            font-size: 32px;
+            line-height: 1.2;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #3a2a5c;
+        }
+
+        h1 .highlight {
+            color: #8a2be2;
+        }
+
+        h1 em {
+            font-style: italic;
+        }
+
+        /* Video section */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .video-image {
+            width: 100%;
+            max-width: 760px;
+            height: auto;
+            cursor: pointer;
+        }
+
+        /* Content text */
+        .content-text {
+            max-width: 760px;
+            margin: 0 auto;
+            font-size: 18px;
+        }
+
+        .content-text p {
+            margin-bottom: 15px;
+        }
+
+        .content-text strong {
+            font-weight: bold;
+        }
+
+        /* Button */
+        .button-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .action-button {
+            display: inline-block;
+            background-color: #8a2be2;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(138, 43, 226, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .action-button:hover {
+            background-color: #7823c7;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(138, 43, 226, 0.4);
+        }
+
+        .action-button::before {
+            content: "👇 ";
+            margin-right: 5px;
+        }
+
+
+        /* Scientific References */
+        .references-section {
+            margin: 30px 0;
+        }
+
+        .references-section h2 {
+            text-align: center;
+            color: #3a2a5c;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .references-logos {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .reference-logo {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer-links {
+            margin-top: 15px;
+        }
+
+        .footer-links a {
+            color: #3a2a5c;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .content-text {
+                font-size: 16px;
+            }
+
+            .action-button {
+                font-size: 18px;
+                padding: 12px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="content-wrapper">
+            <header>
+                <h1>Harvard Discovery: <span class="highlight">"Purple Peel Hack"</span> <em>Melts</em> Stubborn Fat—Even While You Sleep!</h1>
+            </header>
+
+            <div class="video-container">
+                <a href="https://track.nutr.site/click" target="_blank">
+                    <img src="image_for_lp.png" alt="Purple Peel Hack Video" class="video-image">
+                </a>
+            </div>
+
+            <div class="content-text">
+                <p>A growing number of people are using this <strong>revolutionary "Purple Peel Hack"</strong>, which has been <strong>proven to accelerate fat loss, even during sleep.</strong></p>
+
+                <p>This <strong>groundbreaking Harvard discovery</strong> is turning the weight loss industry upside down, <strong>changing everything we thought we knew about stubborn fat and metabolism.</strong></p>
+
+                <p>Scientists and researchers from Harvard University have identified that <strong>this unique purple compound</strong> could be the key to effortless weight loss while you sleep.</p>
+
+                <p>Major weight loss companies are <strong>desperately trying to suppress this presentation</strong> from reaching the public.</p>
+
+                <p><strong>Click the button below</strong> <strong>to discover the Purple Peel Hack before this video gets removed.</strong></p>
+            </div>
+
+            <div class="button-container">
+                <a href="https://track.nutr.site/click" class="action-button" target="_blank">Reveal The Purple Peel Hack Now</a>
+            </div>
+
+
+            <div class="references-section">
+                <h2>Scientific References</h2>
+                <div class="references-logos">
+                    <img src="https://ext.same-assets.com/2588582735/3390624869.webp" alt="Scientific References" class="reference-logo">
+                </div>
+            </div>
+
+            <div class="button-container">
+                <a href="https://track.nutr.site/click" class="action-button" target="_blank">Try The Purple Peel Hack Before It's Gone</a>
+            </div>
+        </div>
+
+        
+        <footer class="footer">
+            <p>Copyright 2025 nutrition-hub.org. All rights reserved.</p>
+            <p>This site is not part, neither is it endorsed by FACEBOOK™. FACEBOOK™ is a trademark of FACEBOOK™, Inc.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a> |
+                <a href="terms.html">Terms of Service</a> |
+                <a href="disclaimer.html">Disclaimer</a> |
+                <a href="contact.html">Contact</a>
+            </div>
+</footer>
+
     </div>
-    <div id="progress-bar">
-      <div id="progress"></div>
-    </div>
+    <script src="https://track.nutr.site/unilpclick.js?attribution=lastpaid&cookiedomain=&cookieduration=90&defaultcampaignid=&regviewonce=false"></script>
+</body>
+</html>
+<!-- partial -->
 
-    <div class="question active" id="question1">
-      <h2>Are you a man or a woman?</h2>
-      <button onclick="nextQuestion(1, 'Man')">Man</button>
-      <button onclick="nextQuestion(1, 'Woman')">Woman</button>
-    </div>
-
-    <div class="question" id="question2">
-      <h2>What is your weight loss goal?</h2>
-      <button onclick="nextQuestion(2, 'Lose 1-20 pounds')">Lose 1-20 pounds</button>
-      <button onclick="nextQuestion(2, 'Lose 21-50 pounds')">Lose 21-50 pounds</button>
-      <button onclick="nextQuestion(2, 'Lose over 50 pounds')">Lose over 50 pounds</button>
-    </div>
-
-    <div class="question" id="question3">
-      <h2>Are you interested in losing up to 2 lbs of fat every 48 hours?</h2>
-      <button onclick="nextQuestion(3, 'Yes')">Yes</button>
-      <button onclick="nextQuestion(3, 'No')">No</button>
-    </div>
-
-    <div class="question" id="question4">
-      <h2>You are about to get exclusive access to The Little-Known “Purple Peel” Hack Melting Fat for Thousands.<br><br>Can you commit to watching it till the end?</h2>
-      <button onclick="ctaFlow('Yes')">Yes</button>
-      <button onclick="ctaFlow('No')">No</button>
-    </div>
-
-    <div id="cta" class="hidden">
-      <h2>Congratulations!</h2>
-      <p>Your spot has been reserved!</p>
-      <a href="https://track.nutr.site/click" target="_blank">
-        <img src="video.png" alt="Watch Video" />
-      </a>
-      <br>
-      <a href="https://track.nutr.site/click" target="_blank" class="button-link">
-        Click Here To Watch The Video ➤➤
-      </a>
-      <p>*You will be redirected to an external site to watch the video.</p>
-    </div>
-  </div>
-
-  <footer>
-    <p>
-      Copyright 2025 nutrition-hub.org. All rights reserved.<br><br>
-      This site is not part, neither is it endorsed by FACEBOOK™. FACEBOOK™ is a trademark of FACEBOOK™, Inc.<br><br>
-      <a href="terms.html" target="_blank">Terms of Service</a> |
-      <a href="disclaimer.html" target="_blank">Disclaimer</a> |
-      <a href="privacy.html" target="_blank">Privacy Policy</a> |
-      <a href="contact.html" target="_blank">Contact Us</a>
-    </p>
-  </footer>
-
-  <script>
-    let currentQuestion = 1;
-    const totalQuestions = 4;
-    const responses = {};
-
-    function nextQuestion(questionNumber, answer) {
-      responses[`question${questionNumber}`] = answer;
-      document.getElementById(`question${questionNumber}`).classList.remove('active');
-      const nextDiv = document.getElementById(`question${questionNumber + 1}`);
-      if (nextDiv) {
-        nextDiv.classList.add('active');
-        updateProgressBar(questionNumber + 1);
-      }
-    }
-
-    function ctaFlow(answer) {
-      if (answer === 'Yes') {
-        document.getElementById('question4').classList.remove('active');
-        document.getElementById('cta').classList.remove('hidden');
-        document.getElementById('headline').classList.add('hide-image');
-        updateProgressBar(totalQuestions + 1);
-      } else {
-        showPopup();
-      }
-    }
-
-    function updateProgressBar(step) {
-      const progress = ((step - 1) / totalQuestions) * 100;
-      document.getElementById('progress').style.width = progress + '%';
-    }
-
-    function showPopup() {
-      alert("To unlock the video and see the Purple Peel hack, please commit to watching it till the end 💜");
-    }
-
-    updateProgressBar(1);
-  </script>
-
-  <script src="https://track.nutr.site/unilpclick.js?attribution=lastpaid&cookiedomain=&cookieduration=90&defaultcampaignid=&regviewonce=false"></script>
 </body>
 </html>
