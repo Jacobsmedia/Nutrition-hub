@@ -66,6 +66,10 @@
     .question.active {
       display: block;
     }
+    h2 {
+      margin: 15px 0;
+      font-size: 1.1rem;
+    }
     button {
       background: linear-gradient(to right, #4caf50, #81c784);
       color: white;
@@ -126,12 +130,27 @@
       text-decoration: underline;
       margin: 0 5px;
     }
+
+    /* Mobile specific tweaks */
+    @media (max-width: 600px) {
+      body {
+        background: #ffffff;
+      }
+      #survey-container {
+        margin: 20px auto;
+        padding: 20px 15px;
+      }
+      button {
+        min-width: 100%;
+        margin: 10px 0;
+      }
+    }
   </style>
 </head>
 <body>
   <div id="survey-container">
     <div id="headline">
-      <h1>The “Purple Peel” Quiz Is Here</h1>
+      <h1>Inside: The Little-Known “Purple Peel” Hack Melting Fat for Thousands.</h1>
       <p>4 fast questions. 1 surprising result.</p>
       <img src="purple_peel_fruit.jpg" alt="Purple Peel" />
     </div>
